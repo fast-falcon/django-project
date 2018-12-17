@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% include 'app/base.html' %}
+<center>
+ <table border="1">
+    <thead>
+      <tr>
+        <th>شرکت</th>
+        <th>توضیحات</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {% for agah in agahi %}
+          {% if agah.active %}
+        <tr>
+          <td>{{ agah.company1 }}</td>
+          <td>{{ agah.discriptation }}</td>
+        </tr>
+          {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</center>

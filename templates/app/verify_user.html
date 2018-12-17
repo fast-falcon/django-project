@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'app/base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">{% csrf_token %}
+    <label>code</label>
+    <input type="password" placeholder="Enter code" name="code" required>
+<button type="submit">Go</button></form>
+</body>
+</html>

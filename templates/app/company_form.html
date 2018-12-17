@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'app/base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body dir="ltr">
+<form method="post" id="Worckrr" novalidate dir="ltr" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table >
+      {{ form.as_table }}
+    </table>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

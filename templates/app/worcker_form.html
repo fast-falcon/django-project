@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{%  include 'app/base.html' %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+ul.errorlist {
+margin: 0;
+padding: 0;
+}
+.errorlist li {;
+color: red;
+display: block;
+font-size: 10px;
+margin: 0 0 3px;
+}
+</style>
+</head>
+<body dir="ltr">
+<form method="post" id="Worckrr" novalidate dir="ltr">
+    {% csrf_token %}
+    <table>
+{% if form.errors %}
+    <p style="color: red;">
+        Please correct the error{{ form.errors|pluralize }} below.
+    </p>
+    {% endif %}
+        {{ form.as_table }}
+
+    </table>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

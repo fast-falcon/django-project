@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% include 'app/base.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ form.username }}<br/>
+{{ form.email }}<br/>
+{{ form.active }}<br/>
+{{ form.compane_type }}<br/>
+{{ form.company_name }}<br/>
+{{ form.date }}<br/>
+{{ form.id }}<br/>
+{{ form.id_date }}<br/>
+{{ form.job_field }}<br/>
+{{ form.job_type }}<br/>
+{{ form.member_n }}<br/>
+{{ form.modir_name }}<br/>
+{{ form.ostan }}<br/>
+{{ form.shahr }}<br/>
+{{ form.modirn }}<br/>
+{{ form.address }}<br/>
+<img src=../{{ form.rez_picture }}>
+<img src=../{{ form.logo_picture }}>
+<a href="/editprofile/"><button >edit</button><a/>
+</body>
+</html>
