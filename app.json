@@ -1,0 +1,17 @@
+{
+  "name": "django-project",
+  "description": "ll",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+
+  ]
+}
